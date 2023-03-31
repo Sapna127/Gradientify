@@ -1,8 +1,8 @@
-import React from 'react';
-import './DirectionPicker.css';
+import React from "react";
+import "./DirectionPicker.css";
 function DirectionPicker({ onChange }) {
   function handleDirectionChange(event) {
-    onChange('direction', event.target.value);
+    onChange(event.target.value);
   }
 
   return (
