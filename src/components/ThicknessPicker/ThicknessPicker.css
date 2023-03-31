@@ -1,0 +1,21 @@
+.thickness-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .thickness-picker label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .thickness-picker input[type="range"] {
+    width: 80%;
+    max-width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  

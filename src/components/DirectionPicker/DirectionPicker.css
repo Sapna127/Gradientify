@@ -1,0 +1,14 @@
+.direction-picker {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .direction-picker button {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+  }
