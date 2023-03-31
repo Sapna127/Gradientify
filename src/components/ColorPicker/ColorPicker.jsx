@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 // import './ColorPicker.css';
 function ColorPicker({ onChange }) {
   function handleStartColorChange(event) {
-    onChange('startColor', event.target.value);
+    onChange(event.target.value);
   }
 
   function handleEndColorChange(event) {
-    onChange('endColor', event.target.value);
+    onChange(event.target.value);
   }
 
   return (
