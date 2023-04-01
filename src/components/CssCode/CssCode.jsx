@@ -1,13 +1,11 @@
 import React from 'react';
 // import './CssCode.css';
 function CSSCode(props) {
-  const { color, direction, thickness } = props;
+  const { color1, color2, direction, thickness } = props;
   
   const styles = {
-    borderWidth: `${thickness}px`,
-    border: 'solid', 
-    borderColor : `${color}`,
-    boxShadow: `inset 0 0 10px ${color}`,
+    border: `${thickness}px solid}`,
+    boxShadow: `inset 0 0 10px ${color1}`,
     height: '100px',
     width: '100px',
     margin: '10px'
@@ -15,11 +13,9 @@ function CSSCode(props) {
   
   const code = `
     div {
-      borderWidth: ${thickness}px;
-      border: solid;
-      borderColor : ${color},
-      box-shadow: inset 0 0 10px ${color};
-      border-image: linear-gradient(to ${direction}, ${color}, transparent) 1;
+      border: ${thickness}px solid,
+      boxShadow: inset 0 0 10px ${color1},
+      border-image: linear-gradient(to ${direction}, ${color1},${color2}, transparent) 1;
       height: 100px;
       width: 100px;
       margin: 10px;

@@ -1,7 +1,7 @@
  /* Preview */
- .preview {
+ .preview-container {
     width: 300px;
     height: 300px;
-    border: solid black 2px;
+    /* border: solid black 2px; */
     margin-bottom: 2rem;
   }
