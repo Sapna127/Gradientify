@@ -1,5 +1,5 @@
 import React from "react";
-import './ThicknessPicker.css'
+// import './ThicknessPicker.css'
 function ThicknessPicker(props) {
   function handleThicknessChange(event) {
     props.onChange(event.target.value);

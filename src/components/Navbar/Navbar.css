@@ -1,0 +1,13 @@
+
+.nav{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:0.1px;
+}
+
+h1{
+    color: #312B46;
+    font-weight: 400;
+    margin-top: 3px;
+}

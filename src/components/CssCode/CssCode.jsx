@@ -1,5 +1,5 @@
 import React from 'react';
-// import './CssCode.css';
+import './CssCode.css';
 function CSSCode(props) {
   const { color1, color2, direction, thickness } = props;
   
@@ -14,7 +14,7 @@ function CSSCode(props) {
   const code = `
     div {
       border: ${thickness}px solid,
-      boxShadow: inset 0 0 10px ${color1},
+      // boxShadow: inset 0 0 10px ${color1},
       border-image: linear-gradient(to ${direction}, ${color1},${color2}, transparent) 1;
       height: 100px;
       width: 100px;
@@ -23,13 +23,15 @@ function CSSCode(props) {
   `;
 console.log(props)
   return (
-    <div className='code'>
+    
+    <div className='code_front'>
+    <div className='code_back'>
       <h3>CSS Code:</h3>
       <pre>{code}</pre>
-      <style>{code}</style>
-      <div style={styles} />
+      {/* <style>{code}</style> */}
+      {/* <div style={styles} /> */}
       
-    </div>
+    </div></div>
   );
 }
 

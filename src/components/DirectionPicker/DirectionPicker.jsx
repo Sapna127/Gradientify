@@ -1,5 +1,5 @@
 import React from "react";
-import "./DirectionPicker.css";
+// import "./DirectionPicker.css";
 function DirectionPicker({ onChange }) {
   function handleDirectionChange(event) {
     onChange(event.target.value);
