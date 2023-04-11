@@ -1,0 +1,22 @@
+.copy_btn{
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background: #3D374E;
+/* border-radius: 7px; */
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+}
+
+.copy_btn:hover {
+    background-color: #cfc1f7;
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .copy_btn:active {
+    transform: scale(0.95);
+  }

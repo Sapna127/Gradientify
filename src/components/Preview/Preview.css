@@ -1,7 +1,7 @@
  /* Preview */
  .preview-container {
     position: relative;
-    
+    margin-left: 200px;
     width: 300px;
     height: 300px;
     border: solid black 2px;
@@ -11,7 +11,7 @@
   .preview_back{
     box-sizing: border-box;
 
-/* position: absolute; */
+position: absolute;
 width: 650px;
 height: 500px;
 /* margin-left: 3px; */

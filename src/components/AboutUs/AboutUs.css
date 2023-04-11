@@ -1,0 +1,17 @@
+.about_us{
+    width: 400px;
+height: fit-content;
+padding: 30px;
+background: #E0EBFE;
+border-radius: 27px;
+align-items: center;
+border: 1px solid #000000;
+}
+
+.heading{
+    margin-left: 20px;
+
+}
+p{
+    color: #757575;
+}

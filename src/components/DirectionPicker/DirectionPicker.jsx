@@ -1,5 +1,5 @@
 import React from "react";
-// import "./DirectionPicker.css";
+import "./DirectionPicker.css";
 function DirectionPicker({ onChange }) {
   function handleDirectionChange(event) {
     onChange(event.target.value);
@@ -7,7 +7,7 @@ function DirectionPicker({ onChange }) {
 
   return (
     <div className="direction-picker">
-      <p>Direction:</p>
+      <label>Direction:</label>
 
       <label htmlFor="top">
         <input

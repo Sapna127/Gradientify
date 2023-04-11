@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-// import './ColorPicker.css';
+import './ColorPicker.css';
 
-function ColorPicker({ value, onChange }) {
-  const [color1, setColor1] = useState(value[0]);
-  const [color2, setColor2] = useState(value[1]);
+function ColorPicker({ colors, onChange }) {
+  const [color1, setColor1] = useState(colors[0]);
+  const [color2, setColor2] = useState(colors[1]);
 
   function handleColorChange(index, event) {
     const newColor = event.target.value;
@@ -13,6 +13,7 @@ function ColorPicker({ value, onChange }) {
 
   return (
     <div className="color-picker">
+      <div className="start_color">
       <label htmlFor="start-color">Start Color:</label>
       <input
         type="color"
@@ -21,7 +22,9 @@ function ColorPicker({ value, onChange }) {
         value={color1}
         onChange={(event) => handleColorChange(0, event)}
       />
+      </div>
 
+      <div className="end_color">
       <label htmlFor="end-color">End Color:</label>
       <input
         type="color"
@@ -30,6 +33,7 @@ function ColorPicker({ value, onChange }) {
         value={color2}
         onChange={(event) => handleColorChange(1, event)}
       />
+      </div>
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Preview(props) {
   //   margin: '5px'
   // };
   const styles = {
-    // borderImage: `linear-gradient(to ${direction}, ${color1},${color2} transparent) ${thickness}px `,
+    borderImage: `linear-gradient(to ${direction}, ${color1},${color2} transparent) ${thickness}px `,
     height: '100px',
     width: '100px',
     margin: '5px',
