@@ -13,8 +13,9 @@ function ColorPicker({ colors, onChange }) {
 
   return (
     <div className="color-picker">
+
       <div className="start_color">
-      <label htmlFor="start-color">Start Color:</label>
+      <label htmlFor="start-color" className="s_color">Start Color:</label>
       <input
         type="color"
         id="start-color"
@@ -25,7 +26,7 @@ function ColorPicker({ colors, onChange }) {
       </div>
 
       <div className="end_color">
-      <label htmlFor="end-color">End Color:</label>
+      <label htmlFor="end-color" className="e_name">End Color:</label>
       <input
         type="color"
         id="end-color"
@@ -34,6 +35,7 @@ function ColorPicker({ colors, onChange }) {
         onChange={(event) => handleColorChange(1, event)}
       />
       </div>
+
     </div>
   );
 }

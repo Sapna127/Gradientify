@@ -1,11 +1,14 @@
-.direction-picker {
+.direction_picker {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin-bottom: 1rem;
-    gap: 20px;
+    gap: 40px;
+    border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 15px;
   }
   
-  .direction-picker button {
+  .direction_picker button {
     font-size: 1.5rem;
     margin-right: 1rem;
     border: none;
@@ -13,3 +16,4 @@
     outline: none;
     cursor: pointer;
   }
+

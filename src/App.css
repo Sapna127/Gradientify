@@ -31,6 +31,8 @@ padding: 15px;
 width:300px;
 margin-top: 1.5px;
 }
+
+
 .border_prop, .color_setting{
   background: #F9F9F9;
 border: 1px solid #000000;
@@ -53,6 +55,9 @@ gap:2px;
   /* padding: 10px; */
 }
 
+Toggle{
+  margin-top: 10px;
+}
 Preview{
   align-items: center;
 }

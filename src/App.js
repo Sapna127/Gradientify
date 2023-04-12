@@ -7,16 +7,22 @@ import { Navbar } from "./components/Navbar/Navbar";
 import Preview from "./components/Preview/Preview";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import { Toggle } from "./UI/Toogle/Toggle";
 import { AboutUs } from "./components/AboutUs/AboutUs";
 function App() {
   const [colors, setColors] = useState(["#FF0000", "#FFFFFF"]);
   const [direction, setDirection] = useState("right");
   const [thickness, setThickness] = useState(3);
-  
+  const [darkMode, setDarkMode] = useState(false);
+
+  function handleToggleDarkMode() {
+    setDarkMode(!darkMode);}
+
   return (
-    <div className="ap_contain">
+    <div className={`App ${darkMode ? 'dark_mode' : 'light_mode'}`}>
     <div>
-      <Navbar />
+      <Navbar onToggleDarkMode={handleToggleDarkMode}/>
+      
       {/* <AboutUs/> */}
       <hr />
       <div className="cols">
@@ -39,6 +45,7 @@ function App() {
           {/* <div><AboutUs/></div> */}
         </div>
         <div className="preview">
+       
           <Preview
             color1={colors[0]}
             color2={colors[1]}
@@ -54,9 +61,7 @@ function App() {
         </div>
       </div>
       
-    </div>
-    {/* <div><Footer/></div> */}
-    
+    </div>    
     </div>
   );
 }

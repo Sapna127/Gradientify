@@ -12,7 +12,8 @@ function ThicknessPicker(props) {
 
   return (
     <div className="thickness-picker">
-      <label>Thickness: {`${Math.round((thickness / 100) * 10) / 10}rem`}</label>
+      <div>
+      <label>Thickness: </label>
       <input
         type="range"
         min="1"
@@ -20,7 +21,9 @@ function ThicknessPicker(props) {
         defaultValue="50"
         onChange={handleThicknessChange}
         className="progress"
-      />
+      /></div>
+      <div>
+      <p className="thick_val">{`${Math.round((thickness / 100) * 10) / 10}rem`}</p></div>
     </div>
   );
 }

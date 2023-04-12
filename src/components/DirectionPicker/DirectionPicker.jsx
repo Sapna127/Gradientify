@@ -6,8 +6,10 @@ function DirectionPicker({ onChange }) {
   }
 
   return (
-    <div className="direction-picker">
-      <label>Direction:</label>
+    <>
+    <label>Choose Direction:</label>
+    <div className="direction_picker">
+      
 
       <label htmlFor="top">
         <input
@@ -42,6 +44,7 @@ function DirectionPicker({ onChange }) {
         Diagonal
       </label>
     </div>
+    </>
   );
 }
 

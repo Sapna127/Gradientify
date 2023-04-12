@@ -1,6 +1,6 @@
 .thickness-picker {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     margin-bottom: 1rem;
     gap: 5px;
@@ -20,4 +20,10 @@
     outline: none;
   }
 
+.thick_val{
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+  color: #000000;
+}
   
