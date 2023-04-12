@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<div align="center"> <h1> Gradientify 🎨 </h1></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"> <h2> Preview 👀  </h2></div>
+<div align="center"> 
+  <h3> Light Mode & Dark Mode </h3>
+</div>
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/91309280/231256521-3aae6a91-d83b-4baa-998e-5b45c5746063.png" width:"100%" height="400px">
+ <img src="https://user-images.githubusercontent.com/91309280/231256560-0f6839b1-be43-46b4-a0ed-797c57ab12e8.png" width:"100%" height="400px"> 
+</p>
 
-## Available Scripts
+<h2> Tech-Stack⚒ </h2>
 
-In the project directory, you can run:
+<h3> UI/UX - Figma </h3>
 
-### `npm start`
+<h3> Frontend – Reactstrap, CSS, ReactJS </h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<h2> Features🚀</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- <h3> Gradient direction: choose the direction of the gradient using a dropdown menu.</h3>
+- <h3>Gradient colors: choose two colors for the gradient using color pickers.</h3>
+- <h3>Gradient thickness: Adjust the thickness of the border using a slider.</h3>
+- <h3>Live preview: The app shows a live preview of the generated gradient border.</h3>
+- <h3>Copy to clipboard: copy the generated CSS code for the border to the clipboard with a click of a button.</h3>
+- <h3>Responsive design: The app is designed to work on different screen sizes, making it accessible to a wider range of users.</h3>
+- <h3>User-friendly interface: The app has a simple and intuitive interface, making it easy for users to generate gradient borders even if they have no prior experience with CSS.</h3>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2> Project Maintainers 😃 </h2>
