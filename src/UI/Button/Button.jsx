@@ -1,9 +1,8 @@
-import React from 'react'
-import './Button.css'
-export const Button = () => {
+import React from 'react';
+import './Button.css';
+
+export const Button = ({ onClick }) => {
   return (
-    <div className='copy_btn'>
-        Copy
-    </div>
-  )
+    <button className="copy_btn" onClick={onClick}>COPY</button>
+  );
 }

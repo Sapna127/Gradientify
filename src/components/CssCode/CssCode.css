@@ -9,6 +9,10 @@
   border: 1px solid #000000;
   /* padding: 20px; */
   }
+  .cs_btn{
+    display: flex;
+    /* gap:30px; */
+  }
 label{
   font-size: 1rem;
   font-weight: 3px;

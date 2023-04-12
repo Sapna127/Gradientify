@@ -1,6 +1,7 @@
 import React from 'react';
 import './CssCode.css';
-import {Button} from '../Button/Button'
+import { Button } from '../../UI/Button/Button';
+
 function CSSCode(props) {
   const { color1, color2, direction, thickness } = props;
   
@@ -22,18 +23,29 @@ function CSSCode(props) {
       margin: 10px;
     }
   `;
-console.log(props)
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText(code)
+      .then(() => {
+        console.log("Text copied to clipboard");
+      })
+      .catch((error) => {
+        console.error("Failed to copy text: ", error);
+      });
+  }
+
   return (
     <div>
-    <div className='code_front'>
-    <div className='code_back'>
-      <h3>CSS Code:</h3>
-      <pre>{code}</pre>
-      {/* <style>{code}</style> */}
-      {/* <div style={styles} /> */}
-      
-      <Button/>
-    </div></div>
+    
+      <div className='code_front'>
+        <div className='code_back'>
+          <div className='cs_btn'><h3>CSS Code:</h3>
+          <Button onClick={copyToClipboard} /></div>
+          
+          <pre>{code}</pre>
+          
+        </div>  
+      </div>
     </div>
   );
 }
