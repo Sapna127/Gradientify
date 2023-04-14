@@ -1,14 +1,14 @@
  /* Preview */
  .preview-container {
     position: relative;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     width: 300px;
     height: 300px;
     border: solid black 2px;
     margin-bottom: 2rem;
   }
 
-  .preview_back{
+.preview_back{
     box-sizing: border-box;
 
 position: absolute;
@@ -34,4 +34,18 @@ border-radius: 25px;
 background: #FFFFFF;
 border: 1px solid #000000;
 border-radius: 25px;
+  }
+
+  @media screen and (max-width: 600px){
+    .preview-container{
+      align-items: center;
+    }
+    .preview_back,.preview_front{
+      width: 100vw;
+      margin-left: 0;
+    }
+    .preview_back{
+      width: 95vw;
+    }
+   
   }

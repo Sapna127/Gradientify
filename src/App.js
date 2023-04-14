@@ -7,8 +7,6 @@ import { Navbar } from "./components/Navbar/Navbar";
 import Preview from "./components/Preview/Preview";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-import { Toggle } from "./UI/Toogle/Toggle";
-import { AboutUs } from "./components/AboutUs/AboutUs";
 function App() {
   const [colors, setColors] = useState(["#FF0000", "#FFFFFF"]);
   const [direction, setDirection] = useState("right");
@@ -60,8 +58,9 @@ function App() {
           />
         </div>
       </div>
+      {/* <Footer/>  */}
+    </div> 
       
-    </div>    
     </div>
   );
 }

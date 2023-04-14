@@ -35,26 +35,46 @@ border: 1px solid #000000;
 border-radius: 25px;
   }
 
-  .code_front::-webkit-scrollbar-track
+  .code_back::-webkit-scrollbar-track
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #9196fa;
 	border-radius: 10px;
+  height: 220px;
 }
 
-.code_front::-webkit-scrollbar
+.code_back::-webkit-scrollbar
 {
 	width: 5px;
 	background-color: #9196fa;
+  height: 220px;
 }
 
 .code_front::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
+
 	background-image: -webkit-gradient(linear,
 									   left bottom,
 									   left top,
 									   color-stop(0.44, rgb(122,153,217)),
 									   color-stop(0.72, rgb(73,125,189)),
 									   color-stop(0.86, rgb(28,58,148)));
+}
+
+@media screen and (max-width: 600px){
+  .code_back,.code_front{
+    width: 95vw;
+    margin-left: 0;
+  }
+  .code_back{
+    width: 93vw;
+  }
+  .cs_btn{
+    display: flex;
+    
+  }
+  Button{
+    display: none;
+  }
 }

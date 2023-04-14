@@ -7,13 +7,18 @@
   flex-direction: column;
 }
 
+.dark_mode{
+  background-color: #312B46;
+}
 .cols{
   display: flex;
   flex-direction: row;
   margin-top: 20px;
   /* margin-left: px; */
-  /* gap: 30px; */
-  align-content: center;
+  /* gap: 0px; */
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
 }
 hr{
   margin-top: 0.2px;
@@ -50,10 +55,6 @@ gap:2px;
   margin-left: 50px;
 }
 
-.preview{
-  margin-left: 100px;
-  /* padding: 10px; */
-}
 
 Toggle{
   margin-top: 10px;
@@ -65,4 +66,12 @@ Preview{
 Footer{
   margin-bottom: 0;
   margin-top: 400px;
+}
+
+
+@media screen and (max-width: 600px){
+  .cols{
+    flex-direction: column;
+    justify-content: center;
+  }
 }
