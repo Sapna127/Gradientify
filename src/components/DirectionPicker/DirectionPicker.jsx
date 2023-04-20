@@ -7,43 +7,41 @@ function DirectionPicker({ onChange }) {
 
   return (
     <>
-    <label>Choose Direction:</label>
-    <div className="direction_picker">
-      
+      <label>Choose Direction:</label>
+      <div className="direction_picker">
+        <label htmlFor="top">
+          <input
+            type="radio"
+            id="top"
+            name="direction"
+            value="top"
+            onChange={handleDirectionChange}
+          />
+          Top
+        </label>
 
-      <label htmlFor="top">
-        <input
-          type="radio"
-          id="top"
-          name="direction"
-          value="top"
-          onChange={handleDirectionChange}
-        />
-        Top
-      </label>
+        <label htmlFor="right">
+          <input
+            type="radio"
+            id="right"
+            name="direction"
+            value="right"
+            onChange={handleDirectionChange}
+          />
+          Right
+        </label>
 
-      <label htmlFor="right">
-        <input
-          type="radio"
-          id="right"
-          name="direction"
-          value="right"
-          onChange={handleDirectionChange}
-        />
-        Right
-      </label>
-
-      <label htmlFor="diagonal">
-        <input
-          type="radio"
-          id="diagonal"
-          name="direction"
-          value="diagonal"
-          onChange={handleDirectionChange}
-        />
-        Diagonal
-      </label>
-    </div>
+        <label htmlFor="diagonal">
+          <input
+            type="radio"
+            id="diagonal"
+            name="direction"
+            value="bottom right"
+            onChange={handleDirectionChange}
+          />
+          Diagonal
+        </label>
+      </div>
     </>
   );
 }

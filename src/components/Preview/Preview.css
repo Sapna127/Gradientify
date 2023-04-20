@@ -1,11 +1,13 @@
  /* Preview */
  .preview-container {
     position: relative;
-    /* margin-left: 200px; */
+    margin-left: 200px;
+    margin-top: 80px;
     width: 300px;
     height: 300px;
     border: solid black 2px;
     margin-bottom: 2rem;
+
   }
 
 .preview_back{
@@ -28,12 +30,12 @@ border-radius: 25px;
     /* position: absolute; */
     width: 670px;
     height: 500px;
-    /* margin-left: 200px; */
-    margin-top: 10px;
+  
 
 background: #FFFFFF;
 border: 1px solid #000000;
 border-radius: 25px;
+align-self: center;
   }
 
   @media screen and (max-width: 600px){
@@ -41,11 +43,12 @@ border-radius: 25px;
       align-items: center;
     }
     .preview_back,.preview_front{
-      width: 100vw;
       margin-left: 0;
+      width: 296px;
+height: 215.98px;
     }
     .preview_back{
-      width: 95vw;
+      width: 287px;
     }
    
   }

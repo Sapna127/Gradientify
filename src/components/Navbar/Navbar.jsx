@@ -9,7 +9,7 @@ import Toggle from "../../UI/Toogle/Toggle";
 import about from '../../assets/about.svg'
 import logo from '../../assets/logo.svg'
 import { AboutUs } from "../AboutUs/AboutUs";
-export const Navbar = ({onChange}) => {
+export const Navbar = () => {
   const [showAboutUs, setShowAboutUs] = useState(false);
 
   function handleAboutUsClick() {
@@ -30,7 +30,7 @@ export const Navbar = ({onChange}) => {
         <img src={logo}/>
       </div>
       <div>
-        <h1>Gradient Border Generator</h1>
+        <h1>CSS GRADIENT BORDER GENERATOR</h1>
       </div>
       </div>
       </div>

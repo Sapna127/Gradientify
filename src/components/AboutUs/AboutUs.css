@@ -1,17 +1,18 @@
-.about_us{
-    width: 400px;
-height: fit-content;
-padding: 30px;
-background: #E0EBFE;
-border-radius: 27px;
-align-items: center;
-border: 1px solid #000000;
+.about_us {
+  width: 400px;
+  height: fit-content;
+  padding: 30px;
+  background: #e0ebfe;
+  border-radius: 27px;
+  align-items: center;
+  border: 1px solid #000000;
+  margin-left: 60vw;
 }
 
-.heading{
-    margin-left: 20px;
-
+.heading {
+  margin-left: 20px;
 }
-p{
-    color: #757575;
+
+p {
+  color: #757575;
 }

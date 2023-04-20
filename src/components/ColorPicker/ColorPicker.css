@@ -20,3 +20,13 @@
   outline: none;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 600px){
+  .color-picker{
+    width: 234px;
+height: 87px;
+  }
+  h2{
+    width:200px;
+  }
+}
