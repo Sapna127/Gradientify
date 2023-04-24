@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ThicknessPicker.css";
 
 function ThicknessPicker(props) {
-  const [thickness, setThickness] = useState(50);
+  const [thickness, setThickness] = useState(3);
 
   function handleThicknessChange(event) {
     const newThickness = event.target.value;
@@ -13,17 +13,21 @@ function ThicknessPicker(props) {
   return (
     <div className="thickness-picker">
       <div>
-      <label>Thickness: </label>
-      <input
-        type="range"
-        min="1"
-        max="100"
-        defaultValue="50"
-        onChange={handleThicknessChange}
-        className="progress"
-      /></div>
+        <label>Thickness: </label>
+        <input
+          type="range"
+          min="1"
+          max="100"
+          defaultValue="3"
+          onChange={handleThicknessChange}
+          className="progress"
+        />
+      </div>
       <div>
-      <p className="thick_val">{`${Math.round((thickness / 100) * 10) / 10}px`}</p></div>
+        <p className="thick_val">{`${
+          Math.round((thickness / 100) * 1000) / 10
+        }px`}</p>
+      </div>
     </div>
   );
 }

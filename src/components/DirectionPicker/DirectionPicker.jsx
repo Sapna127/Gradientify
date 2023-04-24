@@ -19,6 +19,16 @@ function DirectionPicker({ onChange }) {
           />
           Top
         </label>
+        <label htmlFor="bottom">
+          <input
+            type="radio"
+            id="bottom"
+            name="direction"
+            value="bottom"
+            onChange={handleDirectionChange}
+          />
+          Bottom
+        </label>
 
         <label htmlFor="right">
           <input
@@ -30,16 +40,56 @@ function DirectionPicker({ onChange }) {
           />
           Right
         </label>
-
-        <label htmlFor="diagonal">
+        <label htmlFor="left">
           <input
             type="radio"
-            id="diagonal"
+            id="left"
+            name="direction"
+            value="left"
+            onChange={handleDirectionChange}
+          />
+          Left
+        </label>
+
+        <label htmlFor="bottomRight">
+          <input
+            type="radio"
+            id="bottomRight"
             name="direction"
             value="bottom right"
             onChange={handleDirectionChange}
           />
-          Diagonal
+          Bottom Right
+        </label>
+        <label htmlFor="bottomLeft">
+          <input
+            type="radio"
+            id="bottomLeft"
+            name="direction"
+            value="bottom left"
+            onChange={handleDirectionChange}
+          />
+          Bottom Left
+        </label>
+        <label htmlFor="topRight">
+          <input
+            type="radio"
+            id="topRight"
+            name="direction"
+            value="top right"
+            onChange={handleDirectionChange}
+          />
+          Top Right
+        </label>
+        <label htmlFor="topLeft">
+          <input
+            type="radio"
+            id="topLeft"
+            name="direction"
+            value="top left"
+            onChange={handleDirectionChange}
+          />
+          Top Left
         </label>
       </div>
     </>
