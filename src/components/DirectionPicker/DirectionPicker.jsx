@@ -1,5 +1,12 @@
 import React from "react";
 import "./DirectionPicker.css";
+
+const directions = [
+  { id: "top", value: "top", label: "Top" },
+  { id: "right", value: "right", label: "Right" },
+  { id: "diagonal", value: "bottom right", label: "Diagonal" },
+];
+
 function DirectionPicker({ onChange }) {
   function handleDirectionChange(event) {
     onChange(event.target.value);
@@ -9,38 +16,18 @@ function DirectionPicker({ onChange }) {
     <>
       <label>Choose Direction:</label>
       <div className="direction_picker">
-        <label htmlFor="top">
-          <input
-            type="radio"
-            id="top"
-            name="direction"
-            value="top"
-            onChange={handleDirectionChange}
-          />
-          Top
-        </label>
-
-        <label htmlFor="right">
-          <input
-            type="radio"
-            id="right"
-            name="direction"
-            value="right"
-            onChange={handleDirectionChange}
-          />
-          Right
-        </label>
-
-        <label htmlFor="diagonal">
-          <input
-            type="radio"
-            id="diagonal"
-            name="direction"
-            value="bottom right"
-            onChange={handleDirectionChange}
-          />
-          Diagonal
-        </label>
+        {directions.map((direction) => (
+          <label htmlFor={direction.id} key={direction.id}>
+            <input
+              type="radio"
+              id={direction.id}
+              name="direction"
+              value={direction.value}
+              onChange={handleDirectionChange}
+            />
+            {direction.label}
+          </label>
+        ))}
       </div>
     </>
   );
