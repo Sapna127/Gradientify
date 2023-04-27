@@ -23,7 +23,9 @@ function ThicknessPicker(props) {
         className="progress"
       /></div>
       <div>
-      <p className="thick_val">{`${Math.round((thickness / 100) * 10) / 10}px`}</p></div>
+      <p className="thick_val">
+        <input type="text" onChange={handleThicknessChange} />
+      </p></div>
     </div>
   );
 }
