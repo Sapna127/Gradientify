@@ -10,15 +10,14 @@ import about from '../../assets/about.svg'
 import logo from '../../assets/logo.svg'
 import { AboutUs } from "../AboutUs/AboutUs";
 export const Navbar = () => {
-  const [showAboutUs, setShowAboutUs] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
-  function handleAboutUsClick() {
-    setShowAboutUs(true);
-  }
-
-  function handleCloseAboutUs() {
-    setShowAboutUs(false);
-  }
+  const handleCloseAbout = () => {
+    setShowAbout(false);
+};
+const handleAboutUsClick = () =>{
+  setShowAbout(true);
+}
   
   return (
     <>
@@ -39,19 +38,8 @@ export const Navbar = () => {
       </div>
       <hr />
     </div>
-
-      {showAboutUs && (
-        <div>
-          <Backdrop onClick={handleCloseAboutUs} />
-          <Overlay>
-            <div>
-              <AboutUs/>
-            </div>
-          </Overlay>
-        </div>
-      )}
+    {showAbout && (<AboutUs onClose={handleCloseAbout}/>)}
     </>
-
-    
+  
   );
 };
