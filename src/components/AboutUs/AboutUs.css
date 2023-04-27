@@ -16,3 +16,12 @@
 p {
   color: #757575;
 }
+
+.aboutClose{
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+.aboutClose:hover{
+  cursor: pointer;
+}
