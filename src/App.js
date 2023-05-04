@@ -7,8 +7,9 @@ import { Navbar } from "./components/Navbar/Navbar";
 import Preview from "./components/Preview/Preview";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import ColorPallete from "./components/ColorPicker/ColorPallete";
 function App() {
-  const [colors, setColors] = useState(["#FF0000", "#FFFFFF"]);
+  const [colors, setColors] = useState([""]);
   const [direction, setDirection] = useState("right");
   const [thickness, setThickness] = useState(3);
   const [darkMode, setDarkMode] = useState(false);
@@ -38,7 +39,8 @@ function App() {
             <div>
               <h2>Color Settings</h2>
             </div>
-            <ColorPicker colors={colors} onChange={setColors} />
+            {/* <ColorPicker colors={colors} onChange={setColors} /> */}
+            <ColorPallete colors={colors} onChange={setColors}/>
           </div>
           {/* <div><AboutUs/></div> */}
         </div>

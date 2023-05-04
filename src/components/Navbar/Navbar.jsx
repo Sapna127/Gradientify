@@ -1,24 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import "./Navbar.css";
-import { Backdrop } from "../BackOver/Backdrop";
-import {Overlay} from "../BackOver/Overlay"
-import Toggle from "../../UI/Toogle/Toggle";
-// import { AboutUs } from "../AboutUs/AboutUs";
-// import {logo} from 'C:\Users\sapna kul\OneDrive\Desktop\web dev\Gradientify\src\assets\logo.svg'
 import about from '../../assets/about.svg'
 import logo from '../../assets/logo.svg'
 import { AboutUs } from "../AboutUs/AboutUs";
 export const Navbar = () => {
-  const [showAboutUs, setShowAboutUs] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
-  function handleAboutUsClick() {
-    setShowAboutUs(true);
-  }
-
-  function handleCloseAboutUs() {
-    setShowAboutUs(false);
-  }
+  const handleCloseAbout = () => {
+    setShowAbout(false);
+};
+const handleAboutUsClick = () =>{
+  setShowAbout(true);
+}
   
   return (
     <>
@@ -39,19 +33,8 @@ export const Navbar = () => {
       </div>
       <hr />
     </div>
-
-      {showAboutUs && (
-        <div>
-          <Backdrop onClick={handleCloseAboutUs} />
-          <Overlay>
-            <div>
-              <AboutUs/>
-            </div>
-          </Overlay>
-        </div>
-      )}
+    {showAbout && (<AboutUs onClose={handleCloseAbout}/>)}
     </>
-
-    
+  
   );
 };

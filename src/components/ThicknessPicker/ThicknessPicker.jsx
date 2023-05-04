@@ -24,10 +24,16 @@ function ThicknessPicker(props) {
         />
       </div>
       <div>
+      
         <p className="thick_val">{`${
           Math.round((thickness / 100) * 1000) / 10
         }px`}</p>
       </div>
+
+      <p >
+        <input type="text" onChange={handleThicknessChange} className="thick_val" value={thickness}/> px
+      </p></div>
+
     </div>
   );
 }

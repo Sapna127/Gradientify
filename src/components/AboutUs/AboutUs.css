@@ -1,5 +1,5 @@
 .about_us {
-  width: 400px;
+  width: fit-content;
   height: fit-content;
   padding: 30px;
   background: #e0ebfe;
@@ -15,4 +15,13 @@
 
 p {
   color: #757575;
+}
+
+.aboutClose{
+  margin-left: 200px;
+  cursor: pointer;
+}
+
+.aboutClose:hover{
+  cursor: pointer;
 }

@@ -1,17 +1,26 @@
 import "./Preview.css";
+
 function Preview(props) {
-  const { color1, color2, direction, thickness } = props;
+  const { colors, direction, thickness } = props;
 
   const borderStyle = {
-    borderImage: `linear-gradient(to ${direction}, ${color1}, ${color2}) 1`,
-    borderImageSlice: 1,
     borderStyle: "solid",
     borderWidth: `${thickness}px`,
   };
 
+  if (colors && colors.length > 1) {
+    borderStyle.borderImage = `linear-gradient(to ${direction}, ${colors.join(",")}) 1`;
+    borderStyle.borderImageSlice = 1;
+  } else if (colors && colors.length === 1) {
+    borderStyle.borderColor = colors[0];
+  }
+  console.log(borderStyle)
+
   return (
+    
     <div className="preview_front">
       <div className="preview_back">
+      
         <div
           className="preview-container"
           style={{
