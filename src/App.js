@@ -47,14 +47,12 @@ function App() {
         <div className="preview">
        
           <Preview
-            color1={colors[0]}
-            color2={colors[1]}
+            colors={colors}
             direction={direction}
             thickness={thickness}
           />
           <CSSCode
-            color1={colors[0]}
-            color2={colors[1]}
+            colors={colors}
             direction={direction}
             thickness={thickness}
           />

@@ -6,6 +6,7 @@ function Preview(props) {
   const borderStyle = {
     borderStyle: "solid",
     borderWidth: `${thickness}px`,
+    borderImage: `linear-gradient(to ${direction}, colors[0], colors[1]) 1`
   };
 
   if (colors && colors.length > 1) {
@@ -33,3 +34,5 @@ function Preview(props) {
 }
 
 export default Preview;
+
+

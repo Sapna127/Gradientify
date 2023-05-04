@@ -3,24 +3,17 @@ import './CssCode.css';
 import { Button } from '../../UI/Button/Button';
 
 function CSSCode(props) {
-  const { color1, color2, direction, thickness } = props;
-  
-  const styles = {
-    border: `${thickness}px solid}`,
-    boxShadow: `inset 0 0 10px ${color1}`,
-    height: '100px',
-    width: '100px',
-    margin: '10px'
-  };
+  const { colors, direction, thickness } = props;
+  const colorList = Array.isArray(colors) ? colors.join(',') : '';
   
   const code = `
     div {
       border: ${thickness}px solid,
-      // boxShadow: inset 0 0 10px ${color1},
-      border-image: linear-gradient(to ${direction}, ${color1},${color2}, transparent) 1;
+      border-image: linear-gradient(to ${direction}, ${colorList}, transparent) 1;
       height: 100px;
       width: 100px;
       margin: 10px;
+      box-shadow: inset 0 0 10px ${colorList};
     }
   `;
 
@@ -32,6 +25,7 @@ function CSSCode(props) {
       .catch((error) => {
         console.error("Failed to copy text: ", error);
       });
+
   }
 
   return (
@@ -40,10 +34,8 @@ function CSSCode(props) {
       <div className='code_front'>
         <div className='code_back'>
           <div className='cs_btn'><h3>CSS Code:</h3>
-          <Button onClick={copyToClipboard} /></div>
-          
-          <pre>{code}</pre>
-          
+          <Button onClick={copyToClipboard} /></div>         
+          <pre>{code}</pre>     
         </div>  
       </div>
     </div>
